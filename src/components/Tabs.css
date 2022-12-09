@@ -1,0 +1,59 @@
+ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  li {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  li.dark {
+    background-color: #333;
+  }
+  
+  li.light {
+    background-color: #eee;
+  }
+  
+  li.blue {
+    background-color: #77f;
+  }
+  
+  li.selected {
+    background-color: #222;
+  }
+  
+  li.selected.light {
+    background-color: #ccc;
+  }
+  
+  li.selected.blue {
+    background-color: #44b;
+  }
+  
+  li:hover {
+    background-color: #555;
+  }
+  
+  li.light:hover {
+    background-color: #ddd;
+  }
+  
+  li.blue:hover {
+    background-color: #88f;
+  }
+  
+  
+.fade-in-out {
+    transition: all 0.3s;
+    opacity: 0;
+  }
+  
+  .fade-in-out.show {
+    opacity: 1;
+  }
