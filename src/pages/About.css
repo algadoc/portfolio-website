@@ -1,0 +1,39 @@
+.main-div{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.bio-div{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    padding-bottom: 20px;
+}
+
+.headshot-img{
+    height: 50vh;
+    border-radius: 2vw;
+}
+
+.bio-p{
+    font-size: xx-large;
+
+    margin-left: 3vw;
+    text-align: left;
+}
+
+.bio-list{
+    list-style-type: "-";
+    margin-top: -3px;
+}
+
+.bio-list li{
+    padding-left: 5px;
+}
