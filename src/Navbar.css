@@ -26,7 +26,7 @@
 
 .styled-name{
     margin:25px ;
-    height: 7vh;
+    height: 5vh;
     width: min-content;
 }
 
@@ -43,6 +43,21 @@
     margin:10px;
 }
 
+@media (max-width: 700px) {
+    .media-icons {
+      display: none;
+    }
+
+    .styled-name{
+        margin-top:3vh;
+        margin-bottom: 3vh;
+        margin-left: 10vw;
+        margin-right: 10vw;
+        height: min-content;
+        width: 80vw;
+    }
+  }
+
 .bottom-nav{
     padding: 0;
     margin: 0;
@@ -54,8 +69,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
-    align-content: flex-start;
 }
 
 .bottom-nav a {

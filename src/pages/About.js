@@ -13,7 +13,7 @@ export default function About() {
         <ul className="bio-list">
           <li>Design and build avionics for rockets</li>
           <li>Research cislunar mission planning & optimization &#127761;</li>
-          <li>Tinker with AI and Systems Engineering</li>
+          <li>Tinker with AI and Systems Engineering</li> 
         </ul>
         </p>
       </div>
