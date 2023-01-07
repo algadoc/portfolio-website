@@ -1,5 +1,5 @@
 # portfolio-website
-An engineering portfolio website build in React
+An engineering portfolio website built in React
 =======
 # Getting Started with Create React App
 
