@@ -16,8 +16,9 @@ export default function Navbar() {
         </Link>
         
         <nav className="icon-nav">
-          <a href="https://github.com/algadoc"></a>
-          <SquareGithub className="media-icons"/>
+          <a href="https://github.com/algadoc">
+            <SquareGithub className="media-icons"/>
+          </a>
           <a href="https://www.linkedin.com/in/alagaresdetoledo/">
             <SquareLinkedin className="media-icons" />
           </a>

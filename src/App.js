@@ -3,15 +3,22 @@ import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-import { Route, Routes } from "react-router-dom";
+import { Route, Routes, Navigate} from "react-router-dom";
 import PerfectScrollbar  from 'react-perfect-scrollbar';
+import Footer from './components/Footer'
 
-import AneuraiPage from "./pages/AneuraiPage" ; 
+import AneuraiPage from "./pages/AneuraiPage"; 
+import AstrobeeprojectproposalPage from "./pages/AstrobeeprojectproposalPage";
+import FesteravionicsPage from "./pages/FesteravionicsPage";
+import IgnitionboardPage from "./pages/IgnitionboardPage";
+import LumiaPage from "./pages/LumiaPage";
+import MaterialgirlflightcomputerPage from "./pages/MaterialgirlflightcomputerPage";
+import MisterblueskyPage from "./pages/MisterblueskyPage";
+import MotormanufacturingPage from "./pages/MotormanufacturingPage";
+import AgilearchitecturesreportPage from "./pages/AgilearchitecturesreportPage";
 import SamuraiPage from "./pages/SamuraiPage";
-import Test1Page from "./pages/Test1Page";
-import Test2Page from "./pages/Test2Page";
-import Test3Page from "./pages/Test3Page";
-import Test4Page from "./pages/Test4Page";
+import SustainerbaydesignPage from "./pages/SustainerbaydesignPage";
+import TorsiontestingjigPage from "./pages/TorsiontestingjigPage";
 
 import "./fonts/Alata-Regular.ttf";
 
@@ -20,7 +27,7 @@ function App() {
     <div style={{overflow:'hidden'}} >
       <Navbar />
       <PerfectScrollbar >
-      <div className="container" style={{margin:'0px', marginTop:'5vh'}}>
+      <div className="container" style={{margin:'0px', marginTop:'5vh', minHeight:'69.4vh'}}>
         <Routes>
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
@@ -28,15 +35,24 @@ function App() {
           <Route path="/contact" element={<Contact />} />
 
           <Route path="/portfolio/Aneurai" element={<AneuraiPage />} />
+          <Route path="/portfolio/Astrobeeprojectproposal" element={<AstrobeeprojectproposalPage />} />
+          <Route path="/portfolio/Festeravionics" element={<FesteravionicsPage />} />
+          <Route path="/portfolio/Ignitionboard" element={<IgnitionboardPage />} />
+          <Route path="/portfolio/Lumia" element={<LumiaPage />} />
+          <Route path="/portfolio/Materialgirlflightcomputer" element={<MaterialgirlflightcomputerPage />} />
+          <Route path="/portfolio/Misterbluesky" element={<MisterblueskyPage />} />
+          <Route path="/portfolio/Motormanufacturing" element={<MotormanufacturingPage />} />
+          <Route path="/portfolio/Agilearchitecturesreport" element={<AgilearchitecturesreportPage />} />
           <Route path="/portfolio/Samurai" element={<SamuraiPage />} />
-          <Route path="/portfolio/Test1" element={<Test1Page />} />
-          <Route path="/portfolio/Test2" element={<Test2Page />} />
-          <Route path="/portfolio/Test3" element={<Test3Page />} />
-          <Route path="/portfolio/Test4" element={<Test4Page />} />
+          <Route path="/portfolio/Sustainerbaydesign" element={<SustainerbaydesignPage />} />
+          <Route path="/portfolio/Torsiontestingjig" element={<TorsiontestingjigPage />} />
 
+          <Route path="" element={<Navigate to="/about" />} />
+          <Route path="*" element={<Navigate to="/about" />} />
         </Routes>
       </div>
       </PerfectScrollbar>
+      <Footer />
     </div>
   )
 }

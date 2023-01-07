@@ -1,4 +1,4 @@
 {   "title": "AneurAI",
-    "intro": "A machine learning algorithm that proposes the best course of treatment for patients with subarrachnoid brain haemmorage",
+    "intro": "A machine learning algorithm that proposes the best course of treatment for patients with SBH",
     "imageUrl": "./project_images/LogoAneurisma.png"
 }
