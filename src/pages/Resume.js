@@ -1,45 +1,40 @@
 import React, { useEffect, useRef } from 'react';
 import PDFJS from 'pdfjs-dist';
+import Paper from '../components/Paper'
+import './Resume.css'
 
 export default function Resume() {
-
-  const canvasRef = useRef(null);
-
-  useEffect(() => {
-    const renderPDF = async () => {
-      // Fetch the PDF file
-      const response = await fetch('resume.pdf');
-      const pdfData = await response.arrayBuffer();
-
-      // Load the PDF file
-      const pdf = await PDFJS.getDocument({ data: pdfData });
-
-      // Render the first page of the PDF file
-      const page = await pdf.getPage(1);
-      const scale = 1.5;
-      const viewport = page.getViewport({ scale });
-      const canvas = canvasRef.current;
-      const context = canvas.getContext('2d');
-      canvas.height = viewport.height;
-      canvas.width = viewport.width;
-      const renderContext = {
-        canvasContext: context,
-        viewport: viewport
-      };
-      await page.render(renderContext);
-    };
-
-    renderPDF();
-  }, []);
-
-
-  return <div>
-  <h1>Resume lol</h1>
-  <div style={{
-      border: '1px solid black',
-      width: '0.8vw',
-      height: '0.6vh',
-      overflow: 'scroll'
-    }}>
-      <canvas ref={canvasRef} />
-    </div></div>  }
+  
+  return <div style={{display:'flex', justifyContent:'center'}} >
+    <Paper>
+    <header>
+      <h1>Your Name</h1>
+      <h2>Title</h2>
+      <p>Contact information goes here</p>
+    </header>
+    <section>
+      <h3>Summary</h3>
+      <p>A summary of your skills and experiences goes here</p>
+    </section>
+    <section>
+      <h3>Experience</h3>
+      <h4>Company Name</h4>
+      <h5>Title</h5>
+      <p>A description of your responsibilities and achievements goes here</p>
+    </section>
+    <section>
+      <h3>Education</h3>
+      <h4>Degree</h4>
+      <p>A description of your education goes here</p>
+    </section>
+    <section>
+      <h3>Skills</h3>
+      <ul>
+        <li>Skill 1</li>
+        <li>Skill 2</li>
+        <li>Skill 3</li>
+      </ul>
+    </section>
+    </Paper>
+    </div> 
+    }

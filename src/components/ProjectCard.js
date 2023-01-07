@@ -3,6 +3,7 @@ import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
 function ProjectCard({ project }) {
+  const defaultImage = "project_images/test1.jpg";
   const navigate = useNavigate();
 
   const handleClick = () => {
@@ -53,7 +54,11 @@ function ProjectCard({ project }) {
         backgroundPosition: 'center',
         borderRadius: '5px 0 0 5px',
         boxShadow: 'inset 0 0 10px rgba(0,0,0,0.5)',
-      }} />
+      }}  
+      onError={(e) => {
+        e.target.backgroundImage = defaultImage
+      }} 
+      />
       <div style={{
         width: '50%',
         height: '100%',

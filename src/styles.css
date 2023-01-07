@@ -9,10 +9,11 @@ body {
   margin: 0;
   background-color: whitesmoke;
   font-family: Alata;
+  text-align: center;
 }
 
 .container {
   margin: 1rem;
-  text-align: center;
+  padding: 1rem;
 }
 

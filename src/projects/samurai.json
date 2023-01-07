@@ -1,0 +1,4 @@
+{   "title": "SamurAI",
+    "intro": "A reinforcement learning algorithm that optimizes the use of first responder resources while minimizing time-to-accident for the city of Madrid.",
+    "imageUrl": "./project_images/LogoSamurai.png"
+}

@@ -1,0 +1,20 @@
+
+name: Deploy to Firebase
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+      - run: npm install -g firebase-tools
+      - run: npm run build
+      - run: firebase use --add "portfolio-33b82"
+      - run: firebase deploy --only hosting

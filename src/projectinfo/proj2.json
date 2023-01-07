@@ -1,9 +1,0 @@
-// projects/project2.json
-{
-  "title": "Project 2",
-  "location": "Location 2",
-  "dateRange": "Date Range 2",
-  "summary": "Summary 2",
-  "description": "Description 2",
-  "pictures": ["picture3.jpg", "picture4.jpg"]
-}
