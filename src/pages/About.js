@@ -34,7 +34,7 @@ export default function About() {
         </p>
       </div>
 
-    <hr style={{borders: "none", borderBottom: " 3px solid black", borderTop: " 1px solid black", width: "80%", margin: "0 auto", borderColor:"gray"}}/>
+    <hr style={{borders: "none", borderBottom: " 3px solid black", borderTop: " 1px solid black", width: "80%", margin: "0 auto", borderColor:"gray", marginBottom:"4vh"}}/>
     <h1>Latest Projects:</h1>
     <ProjectList projects={latestProjects} />
 

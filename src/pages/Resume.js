@@ -26,7 +26,7 @@ export default function Resume() {
         <p>Other skills: Machine/Deep/Reinforcement Learning (Sklearn & Keras in Python), Lathe & Mill machining</p>
         <h3>Experience</h3>
         <hr />
-        <Experience name="Georgia Tech Experimental Rocketry" dates="Aug 2021 - Present" title="Avionics Lead" />
+        <Experience name="Georgia Tech Experimental Rocketry" dates="August 2021 - Present" title="Avionics Lead" />
         <ul>
           <li>Lead a team of 15 students and $60,000 budget to build the complete avionics stack for a two-stage rocket</li>
           <li>Designed, built, and programmed a custom flight computer to control the vehicle and record attitude and position data</li>
@@ -44,7 +44,7 @@ export default function Resume() {
         <li>Wrote aid packages and documentation for students to understand the class material</li>
         </ul>
 
-        <Experience name="AI Saturdays" dates="Sep 2018 - May 2022" title="Lecturer" />				    
+        <Experience name="AI Saturdays" dates="September 2018 - May 2022" title="Lecturer" />				    
         <ul>
           <li>Gave lectures on Data Analysis, Random Forests and Neural Networks to post-graduate students</li>
           <li>Mentored student projects where AI was applied to medicine, engineering, and other related fields</li>
@@ -60,7 +60,7 @@ export default function Resume() {
           <li>Built a data-powered dashboard for geo-located scenario visualization, enabling war-gaming at the mission event level</li>
         </ul>
 
-        <Experience name="Agile Communication Architectures" dates="Aug 2022 – Jan 2023" title="Research Fellow" />				    
+        <Experience name="Agile Communication Architectures" dates="August 2022 – January 2023" title="Research Fellow" />				    
         <ul>
           <li>Designed localization system based on time-of-flight measurements of Wi-Fi packets</li>
           <li>Developed methods to reduce noise from multi pathing and interference using OFDM properties</li>

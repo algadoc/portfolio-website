@@ -1,0 +1,30 @@
+
+.main_div {
+    padding: 2vw;
+}
+hr {
+    border: none;
+    border-bottom: 3px solid black; 
+    border-top: 1px solid black; 
+    width: 80%; 
+    margin: 0 auto; 
+    margin-bottom: 3vh;
+    border-color: gray;
+}
+
+h3 {
+    justify-self: flex-start;    
+}
+
+p {
+    text-align: center;
+}
+.center_image {
+    align-self: center;
+}
+
+@media (max-width: 700px) {
+    .main_div {
+        padding: 1vw;
+    }
+}
